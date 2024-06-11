@@ -91,7 +91,6 @@ nav a {
   
   .hero-banner {
     background: rgb(120, 68, 120);
-    background-image: url("..images/coding.jpg"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
     background-size: cover;
     background-position: center;
     background-blend-mode: soft-light;
@@ -105,7 +104,7 @@ nav a {
   }
   
   .hero-banner div {
-    flex: 0 0 90%;
+    flex: 60 0 90%;
   }
   
   .hero-banner h2 {
@@ -126,7 +125,7 @@ nav a {
   
   .page-section {
     margin: 25px 0;
-    padding: 10px 0;
+    padding: 0px 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -172,17 +171,20 @@ nav a {
     background-blend-mode: soft-light;
     background-size: 150%;
     transition: all 0.5s;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   
   /* feature first portfolio item */
   .flex-item:first-child {
-      min-height: 400px;
-      flex-basis: 100%;
+      min-height: 150px;
+            border-radius: 55px;
+      flex-basis: 70%;
   }
   
   .flex-item:hover {
     background-color: rgba(0, 0, 0, 0.3);
+    width: 250px;
+            border-radius: 125px;
   }
   
   .flex-item div {
@@ -223,21 +225,11 @@ nav a {
   }
   
   /* portfolio project images */
-  .run-buddy {
-    background-image: url("../images/coffee mug.jpg");
-  }
   
-  .coming-soon {
-    background-image: url("..images/function-photo.jpg");
-  }
   
-  .blog {
-    background-image: url("..");
+  .work {
+    background-image: url("images/function-photo.jpg");
   
-  }
-  
-  .my-work {
-    background-image: url("images/coding.jpg");
   }
   
   /* end portfolio project images */
@@ -278,7 +270,7 @@ nav a {
   @media screen and (max-width: 768px) {
     .flex-item,
     .flex-item:first-child {
-      flex-basis: 100%;
+      flex-basis: 70%;
     }
   
     .flex-item:first-child {
@@ -288,12 +280,14 @@ nav a {
     .hero-banner {
       justify-content: center;
       text-align: center;
+
+      .contact address {
+        flex-direction: column;
+        align-items: flex-start; 
+
     }
   
-    .contact address {
-      flex-direction: column;
-      align-items: flex-start;
-    }
+  
 
     
   }
